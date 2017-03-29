@@ -1,0 +1,30 @@
+{
+  "name": "webservice",
+  "version": "1.0.0",
+  "description": "Web Service Example as a Recruitment Task for Versine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack --config development.config.js --display-error-details --display-modules",
+    "prod": "node_modules/.bin/webpack --config production.config.js"
+  },
+  "author": "Joonas Greis",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.2.2",
+    "compression-webpack-plugin": "^0.3.2",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "imports-loader": "^0.7.1",
+    "style-loader": "^0.16.1",
+    "uglify-js": "git://github.com/mishoo/UglifyJS2.git#harmony",
+    "uglifyjs-webpack-plugin": "^0.3.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "underscore": "^1.8.3"
+  }
+}

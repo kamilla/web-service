@@ -1,0 +1,13 @@
+node_modules/
+bower_components/
+public_html/*
+!public_html/index.html
+*.sublime-workspace
+*.log
+npm-debug.log*
+*.pid
+*.seed
+*.pid.lock
+.npm
+*.tgz
+.env
