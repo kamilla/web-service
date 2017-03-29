@@ -1,0 +1,106 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+}
+
+#floaterCanvas, #modalLayer {
+    position: absolute;
+}
+
+#modalLayer {
+	pointer-events: none;
+	height: 100%;
+    width: 100%;
+}
+
+/*dialog {
+	pointer-events: all;
+}*/
+
+.dialog {
+	/*display: none;*/
+	position: absolute;
+    width: 400px;
+    height: 100px;
+    background: #fff;
+    pointer-events: all;
+}
+
+
+
+
+
+/*___ MODAL DIALOGS ___*/
+.cross {
+    background: #444;
+    border: none;
+    border-radius: 80px;
+    box-shadow: inset 0 0 1px 1px hsla(0,10%,10%,.2),
+      inset 0 0 1px 2px hsla(0,10%,10%,.2),
+      inset 0 0 1px 3px hsla(0,10%,10%,.2),
+      inset 0 0 1px 4px hsla(0,10%,10%,.5),
+      inset 0 -2px 1px 2px hsla(0,10%,10%,.5),
+      inset 0 1px 1px 4px hsla(0,10%,100%,.25),
+      inset 0 -15px 15px hsla(0,10%,10%,.2),
+      0 -2px 4px 2px hsla(0,10%,10%,.5),
+      0 5px 5px hsla(0,10%,10%,.25),
+      0 0 1px 1px hsla(0,10%,10%,.2),
+      0 0 1px 2px hsla(0,10%,10%,.2),
+      0 0 1px 3px hsla(0,10%,10%,.2),
+      0 0 1px 4px hsla(0,10%,10%,.5),
+      0 1px 1px 4px hsla(0,10%,100%,.25),
+      0 -1px 1px 4px hsla(0,10%,10%,.5);
+    color: #303030;
+    cursor: pointer;
+    font: bold 40px/85px sans-serif;
+    height: 40px;
+    padding: 0;
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.25),
+                 0 -1px 1px hsla(0,0%,0%,.75);
+    width: 40px;
+}
+.cross:hover,
+.cross:focus {
+    color: #622;
+    text-shadow: 0 0 20px hsla(240,75%,75%,.5),
+                 0 1px 1px hsla(0,0%,100%,.25),
+                 0 -1px 1px hsla(0,0%,0%,.75);
+}
+.cross:active {
+    box-shadow: inset 0 0 1px 1px hsla(0,20%,20%,.2),
+                inset 0 0 1px 2px hsla(0,20%,20%,.2),
+                inset 0 0 1px 3px hsla(0,20%,20%,.2),
+                inset 0 0 1px 4px hsla(0,20%,20%,.5),
+                inset 0 -2px 1px 2px hsla(0,20%,20%,.5),
+                inset 0 1px 1px 4px hsla(0,20%,100%,.25),
+                inset 0 -15px 15px hsla(0,20%,20%,.2),
+                0 -2px 4px 2px hsla(0,20%,20%,.5),
+                0 5px 5px hsla(0,20%,20%,.25),
+                0 0 1px 1px hsla(0,20%,20%,.2),
+                0 0 1px 2px hsla(0,20%,20%,.2),
+                0 0 1px 3px hsla(0,20%,20%,.2),
+                0 0 1px 4px hsla(0,20%,20%,.5),
+                0 1px 1px 4px hsla(0,20%,100%,.25),
+                0 -1px 1px 4px hsla(0,20%,20%,.5);
+    line-height: 86px;
+}
+
+.cross:after {
+    content: "✖";
+    left: 9px;
+    position: absolute;
+    top: -21px;
+    font-size: 25px;
+}
