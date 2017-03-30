@@ -35,6 +35,6 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("../css/style.css"),
-        new webpack.IgnorePlugin(/^jquery$/)
+        // new webpack.IgnorePlugin(/^jquery$/)
     ]
 };

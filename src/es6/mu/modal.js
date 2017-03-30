@@ -39,13 +39,13 @@ class Modal {
 		  const editConnection = `<h2>Edit Connetion [<span>${id}</span>]</h2>`;
       const editZone = `<h2>Edit Zone [<span>${id}</span>]</h2>`;
 
-  		function htmlTemplate(type) { // TÄÄKI ILMAN SWITCHII JOS MAHOLLISTA SE KUTSUKI?
+  		function htmlTemplate(type) {
   			switch(type) {
-  		 			case 'editNode':
+  		 			case 'node':
   		 				return editNode;
-  		 			case 'editConnection':
+  		 			case 'connection':
   		 				return editConnection;
-            case 'editZone':
+            case 'zone':
               return editZone;
   		 			default:
   		 				return `<h2>Unknown Modal Dialog</h2>`;

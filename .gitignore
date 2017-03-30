@@ -1,7 +1,7 @@
 node_modules/
 bower_components/
-public_html/*
-!public_html/index.html
+public_html/css/
+public_html/js/
 *.sublime-workspace
 *.log
 npm-debug.log*

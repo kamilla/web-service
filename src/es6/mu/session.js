@@ -47,7 +47,7 @@ class Session {
  	// Do POST request
 	login() {
 		// TODO: MOVE TO CONFIG
-		const credentials = '{"username":"' + '' + '","password":"' + '' + '"}';
+		const credentials = '{"username":"' + 'kamilla' + '","password":"' + '21232f297a57a5a743894a0e4a801fc3' + '"}';
 
 	    //const credentials = getCredentials();
 	    // $.ajax({
